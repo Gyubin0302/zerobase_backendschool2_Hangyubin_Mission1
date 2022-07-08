@@ -2,6 +2,15 @@ package com.example.mission1.util;
 
 import java.sql.*;
 
+/**
+ * CREATE database public_wifi;
+ *
+ * create user 'public_wifi_user'@'localhost' identified by 'p1234';
+ * grant all privileges on public_wifi.* to 'public_wifi_user'@'localhost';
+ *
+ * create user 'public_wifi_user'@'%' identified by 'p1234';
+ * grant all privileges on public_wifi.* to 'public_wifi_user'@'%';
+ */
 public class DBConnection {
     private static Connection connection;
 
